@@ -1,0 +1,201 @@
+.navbar-dark .navbar-brand{
+    left: 46%;
+    text-align: center;
+    position: relative;
+    display: block;
+    color: gold;
+    margin: 1rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    margin-right: 2rem;
+}
+
+.navbar-collapse{
+    margin-right: 8.5rem;
+}
+
+body{
+    padding-top: 5.5rem;
+    background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
+    background-size: cover;
+    background-position: center;
+        background-attachment: fixed;
+    color: #909090;
+  position: relative;
+  margin: 0;
+  padding-bottom: 0.5rem;
+ /*overflow: unset */
+ padding-right: 0 !important
+}
+.bg-dark{
+    background-color: #252525!important;
+    padding-right: 0px !important;
+    position: fixed;
+    background-image: url("https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg")
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    color: gold
+}
+
+.footer{
+    background-color: #252525;
+    position: absolute;
+    width: 100%;
+    padding-right: 0px !important;
+    background-image: url("https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg");
+}
+.footer p {
+    color: rgba(255,255,255,.5);
+    margin: 1rem 1rem;
+}
+
+
+/*    *{
+      padding:  0px;
+      margin: 0px;
+      transition: all .4s ease;
+      color: white;
+      font-family: 'Lato';
+    }*/
+    .containe{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      
+    }
+    .containe .two, .one{
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    /*h1{
+      font-size: 2.5em;
+      margin: 0px 10%;
+    }
+    p{
+      margin: 0px 10%;
+      font-size: 1em;
+      text-align: justify;
+      max-width: 70%;
+    }*/
+    .containe .one{
+      transition: all 1s ease;
+      flex: 1;
+      height: 100%;
+      align-items: center;
+      background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
+    }
+
+    .containe .one:hover {
+      transition: all 1s ease;
+      flex: 1.3 !important;
+    }
+    .containe .two:hover {
+      transition: all 1s ease;
+      flex: 1.3 !important;
+    }
+    .containe .two{
+      transition: all 1s ease;
+      flex: 1;
+      background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn{
+      
+      width: 200px;
+      height: 40px;
+      border-radius: 6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      cursor: pointer;
+      color:black;
+      box-shadow: 0px 3px 10px 1px rgba(0,0,0,.4);
+    }
+    .btn:hover{
+      transition: all .4s ease;
+      background-color: gold;
+      color: white;
+    }
+
+    .content{
+      width: 100%;
+      height: 100%;
+    }
+    .two .content{
+      /*background: #00061559;*/
+      display: contents;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .one .content{
+      /*background: linear-gradient(to right, #00000094, #84001887)*/;
+      display: contents;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 768px)
+    {
+      .containe{
+        flex-direction: column
+      }
+    }
+    .containe .two h1{
+      padding-bottom: 3rem;
+    }
+    .containe .one h1{
+      padding-bottom: 3rem;
+    }
+    .containe .one h4{
+      padding-bottom: 3rem;
+    }
+    
+.jumbotron.gra {
+  background-color: #3e3e3e96;
+  text-align: center
+}
+.game{
+  
+  display: inline-block
+}
+.game1{
+  display: inline-block;
+  margin-right: 13rem
+}
+
+.modal{
+  top: 10rem;
+}
+
+.modal-open {
+    padding-right: 0px !important;
+    overflow: inherit;
+}
+.test{
+  overflow-y:scroll
+}
+.modal-content{
+  background-color: #e9e9e9c7;
+  border-radius: 2rem;
+  max-width: 700px;
+  background-image: url('https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg')
+}
+
+.modal-content .container{
+  max-width: 500px
+}
+.modal-lg{
+  align-items: center;
+    justify-content: center;
+    display: flex;
+}
