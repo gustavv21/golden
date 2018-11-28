@@ -1,193 +1,158 @@
 .navbar-dark .navbar-brand{
-    left: 46%;
-    text-align: center;
-    position: relative;
-    display: block;
-    color: gold;
-    margin: 1rem 1rem;
+  left: 46%;
+  text-align: center;
+  position: relative;
+  display: block;
+  color: gold;
+  margin: 1rem 1rem;
+  font-family: 'Black Han Sans', sans-serif;
+}
+.btn.login{
+  min-width: 100%
 }
 
 .navbar-dark .navbar-nav .nav-link{
-    margin-right: 2rem;
-        color: rgb(255, 255, 255);
+  margin-right: 2rem;
+  color: rgb(255, 255, 255);
 }
 
 .navbar-collapse{
-    margin-right: 8.5rem;
+  margin-right: 8.5rem;
 }
 
 body{
-    padding-top: 5.5rem;
-    background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
-    background-size: cover;
-    background-position: center;
-        background-attachment: fixed;
-    color: black;
+  overflow-y:scroll;
+  padding-top: 5.5rem;
+  background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
   position: relative;
   margin: 0;
   padding-bottom: 0.5rem;
- /*overflow: unset */
- padding-right: 0 !important
+  padding-right: 0 !important
 }
+
 .bg-dark{
-    background-color: #252525!important;
-    padding-right: 0px !important;
-    position: fixed;
-    background-image: url("https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg")
+  background-color: #252525!important;
+  padding-right: 0px !important;
+  position: fixed;
+  background-image: url("https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg")
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-    color: gold
+  color: gold
 }
 
 .footer{
-    background-color: #252525;
-    position: absolute;
-    width: 100%;
-    padding-right: 0px !important;
-    background-image: url("https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg");
+  background-color: #252525;
+  position: absolute;
+  width: 100%;
+  padding-right: 0px !important;
+  background-image: url("https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg");
 }
 .footer p {
-    color: rgb(255, 255, 255);;
-    margin: 1rem 1rem;
+  color: rgb(255, 255, 255);;
+  margin: 1rem 1rem;
 }
 
+.containe{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 
-/*    *{
-      padding:  0px;
-      margin: 0px;
-      transition: all .4s ease;
-      color: white;
-      font-family: 'Lato';
-    }*/
-    .containe{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      
-    }
-    .containe .two, .one{
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
+.content{
+  display: contents;
+  justify-content: center;
+  align-items: center;
+}
 
-    /*h1{
-      font-size: 2.5em;
-      margin: 0px 10%;
-    }
-    p{
-      margin: 0px 10%;
-      font-size: 1em;
-      text-align: justify;
-      max-width: 70%;
-    }*/
-    .containe .one{
-      transition: all 1s ease;
-      flex: 1;
-      height: 100%;
-      align-items: center;
-      --bg-color: rgba(43, 43, 43, 0.8);
-      background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
-    }
+.containe .left, .right{
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
-    .containe .one:hover {
-      transition: all 1s ease;
-      flex: 1.3 !important;
-    }
-    .containe .two:hover {
-      transition: all 1s ease;
-      flex: 1.3 !important;
-    }
-    .containe .two{
-      transition: all 1s ease;
-      flex: 1;
-      background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
-      height: 100%;
-      display: flex;
-      align-items: center;
-    }
+.containe .left{
+  transition: all 1s ease;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  background-image: url('https://www.goldenfate.net/template/default/gfx/background.jpg');
+}
 
-    .btn{
-      
-      width: 200px;
-      height: 40px;
-      /*border-radius: 6em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: white;
-      cursor: pointer;
-      color:black;
-      box-shadow: 0px 3px 10px 1px rgba(0,0,0,.4);*/
-      
-      color: black;
-      content: "";
-	/*position: absolute;*/
+.containe .left:hover {
+  transition: all 1s ease;
+  flex: 1.3 !important;
+}
+
+.containe .right{
+  transition: all 1s ease;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  background-image:  url('https://www.goldenfate.net/template/default/gfx/background.jpg');
+}
+
+.containe .right:hover {
+  transition: all 1s ease;
+  flex: 1.3 !important;
+}
+
+.btn{
+  width: 200px;
+  height: 40px;
+  color: black;
+  content: "";
 	top:1px;
 	bottom:1px;
 	left:1px;
 	right:1px;
 	display: block;
-border-radius: 30px;
+  border-radius: 30px;
 	background: linear-gradient(to bottom, rgba(255,232,173,1) 0%, rgba(255,232,173,1) 23%, rgba(230,170,30,1) 77%, rgba(230,170,30,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe8ad', endColorstr='#e6aa1e', GradientType=0 );
-	
 	transition: all 1000ms ease-in-out;
-      
-    }
+}
     
-    .btn:hover{
-      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-      transition: all 1.4s ease;
-      color: black;
-      background: linear-gradient(to bottom, rgba(230,170,30,1) 0%, rgba(230,170,30,1) 23%, rgba(255,232,173,1) 77%, rgba(255,232,173,1) 100%);
-    }
+.btn:hover{
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  transition: all 1.4s ease;
+  color: black;
+  background: linear-gradient(to bottom, rgba(230,170,30,1) 0%, rgba(230,170,30,1) 23%, rgba(255,232,173,1) 77%, rgba(255,232,173,1) 100%);
+}
 
-    .content{
-      width: 100%;
-      height: 100%;
+@media (max-width: 768px)
+  {
+    .containe{
+      flex-direction: column
     }
-    .two .content{
-      /*background: #00061559;*/
-      display: contents;
-      justify-content: center;
-      align-items: center;
-    }
+  }
 
-    .one .content{
-      /*background: linear-gradient(to right, #00000094, #84001887)*/;
-      display: contents;
-      justify-content: center;
-      align-items: center;
-    }
-    @media (max-width: 768px)
-    {
-      .containe{
-        flex-direction: column
-      }
-    }
-    .containe .two h1{
-      padding-bottom: 3rem;
-    }
-    .containe .one h1{
-      padding-bottom: 3rem;
-    }
-    .containe .one h4{
-      padding-bottom: 3rem;
-    }
+.containe .right h1{
+  padding-bottom: 3rem;
+}
+
+.containe .left h1{
+  padding-bottom: 3rem;
+}
+
+.containe .left h4{
+  padding-bottom: 3rem;
+}
     
 .jumbotron.gra {
   background-color: #3e3e3e96;
   text-align: center
 }
+
 .game{
-  
   display: inline-block
 }
+
 .game1{
   display: inline-block;
   margin-right: 13rem
@@ -198,12 +163,10 @@ border-radius: 30px;
 }
 
 .modal-open {
-    padding-right: 0px !important;
-    overflow: inherit;
+  padding-right: 0px !important;
+  overflow: inherit;
 }
-.test{
-  overflow-y:scroll
-}
+
 .modal-content{
   background-color: #e9e9e9c7;
   border-radius: 2rem;
@@ -214,8 +177,9 @@ border-radius: 30px;
 .modal-content .container{
   max-width: 500px
 }
+
 .modal-lg{
   align-items: center;
-    justify-content: center;
-    display: flex;
+  justify-content: center;
+  display: flex;
 }
