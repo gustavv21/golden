@@ -1,0 +1,72 @@
+<% include ../partials/header %>
+
+<div class="jumbotron gra">
+    <div class="container">
+        <h2>Get the items you actually want</h2>
+        <hr>
+        <h4 style="padding-bottom: 1rem">Play, win and have fun getting the most popular cards</h4>
+        <div class="game1">
+            <button class="btn">
+                Golden Strike Free
+            </button> 
+        </div>
+        <div class="game">
+            <button class="btn" data-toggle="modal" data-target=".create">
+              Create a game
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade create" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div>
+                        <form action="/gra" method="POST">
+                            <div class="form-group">
+                                <label>Player</label>
+                                <input class="form-control" type="text" name="player" placeholder="John Don">
+                            </div>
+                            <div class="form-group">
+                                <label>Player2</label>
+                                <input class="form-control" type="text" name="player2" placeholder="Golden Player">
+                            </div>
+                            <div class="form-group">
+                                <label>Price</label>
+                                <input class="form-control" type="number" name="price" placeholder="Enter the amount">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn login">Create game</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <table class="Rtable ">
+        <tbody>
+            <% game.forEach(function(game){ %>
+                <tr class="testt" onclick="location.href='/gra/<%= game.id %>'">
+                    <th class="Rtable-cell left"><%= game.player %></th>
+                    <th class="Rtable-cell middle">Joinable</th>
+                    <th class="Rtable-cell p"><%= game.price %> $</th> 
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<% include ../partials/footer %>
