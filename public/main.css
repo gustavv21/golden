@@ -13,7 +13,6 @@ body{
 }
 
 ::-webkit-scrollbar{
-  
   width: 4px;
   background: linear-gradient(to bottom, #f2994a, #f2c94c);
 }
@@ -23,28 +22,62 @@ body{
 }
 
 .navbar-dark .navbar-brand{
-  left: 46%;
+  position: absolute;
+  left: 50%;
+  display: block;
+  transform: translate(-50%);
   text-align: center;
   position: relative;
   display: block;
   color: gold;
   font-family: 'Unlock', cursive;
-  margin: 1rem 1rem;
+  /*margin-top: 1rem;
+  margin-bottom: 1rem;*/
   /*font-family: 'Black Han Sans', sans-serif;*/
+  font-family: "Arial", sans-serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+    	color: #3d3d3d;
+    	  text-shadow: 
+    	  	0 -1px 0 #858585,
+              
+               
+               0 1px 10px rgba(0,0,0,.6),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.2),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 7px 10px rgba(0,0,0,.25),
+               0 15px 10px rgba(0,0,0,.2),
+               0 25px 15px rgba(0,0,0,.15);
+    }
 }
+
 .btn.login{
   min-width: 100%
 }
 
+.navbar{
+  min-height: 5.5rem;
+}
+.navbar .nav{
+  margin-right: -100px;
+}
+
 .navbar-dark .navbar-nav .nav-link{
-  margin: .8rem 5rem;
+  margin-left: 5rem;
   color: rgb(255, 255, 255);
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .navbar-collapse{
-  margin-right: 6.5rem;
+  margin-left: -17rem;
+  margin-right: 5rem;
+}
+.show{
+  margin-left: auto;
 }
 
 .bg-dark{
@@ -97,9 +130,13 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .containe .left{
+/*  border: 3px double ;
+  border-image: linear-gradient(to left, red, yellow);
+  border-image-slice: 1;*/
   transition: all 1s ease;
   flex: 1;
   height: 100%;
@@ -113,6 +150,10 @@ body{
 }
 
 .containe .right{
+  /*border: 3px double ;
+  border-left: 2px;
+  border-image: linear-gradient(to right, red, yellow);
+  border-image-slice: 1;*/
   transition: all 1s ease;
   flex: 1;
   height: 100%;
@@ -162,22 +203,58 @@ body{
   }
 
 .containe .right h1{
-  padding-bottom: 3rem;
-  font-size: 4rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 5rem;
   text-align: center;
   color: rgb(253, 211, 101);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: url('http://i.giphy.com/VQ2XbYu2ITUbK.gif');
+  background-size: cover;
+  background-repeat: norepeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .containe .left h1{
-  padding-bottom: 3rem;
-  font-size: 4rem;
+  	/*border-top: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;*/
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 5rem;
   text-align: center;
   color: rgb(253, 211, 101);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: url('http://i.giphy.com/VQ2XbYu2ITUbK.gif');
+  background-size: cover;
+  background-repeat: norepeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .containe .left h4, .right h4{
-  padding-bottom: 3rem;
   text-align: center;
+  font-size: 1.5rem;
+}
+
+.containe .h4top{
+  border-top: 6px double #ba0e0e;
+	padding-top: 2rem;
+	color: transparent;
+	background: -webkit-linear-gradient(bottom, rgba(255,232,173,1) 0%, rgba(255,232,173,1) 0%, rgba(230,170,30,1) 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.containe .h4down{
+  border-bottom: 6px double #ba0e0e;
+	padding-bottom: 2rem;
+		color: transparent;
+	background: -webkit-linear-gradient(top, rgba(255,232,173,1) 0%, rgba(255,232,173,1) 0%, rgba(230,170,30,1) 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
     
 .jumbotron.gra {
