@@ -54,10 +54,6 @@ body{
     }
 }
 
-.btn.login{
-  min-width: 100%
-}
-
 .navbar{
   min-height: 5.5rem;
 }
@@ -166,7 +162,7 @@ body{
   flex: 1.3 !important;
 }
 
-.btn , .btn.containe{
+.button , .button.containe{
   border: 5px solid #ebebaf30;
   font-size: 18px;
   font-weight: 500;
@@ -175,24 +171,28 @@ body{
   height: 50px;
   color: black;
   content: "";
-	top:1px;
-	bottom:1px;
-	left:1px;
-	right:1px;
-	display: block;
+  padding: 5px;
+  text-align: center;
+	display: inline-block;
+	text-decoration: none;
   border-radius: 30px;
 	background: linear-gradient(to bottom, rgba(255,232,173,1) 0%, rgba(255,232,173,1) 23%, rgba(230,170,30,1) 77%, rgba(230,170,30,1) 100%);
 	transition: all 1000ms ease-in-out;
 }
 
-.btn:hover{
+.button.all{
+  min-width: 100%
+}
+
+.button:hover{
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   transition: all 1.4s ease;
   color: black;
+  text-decoration: none;
   background: linear-gradient(to bottom, rgba(230,170,30,1) 0%, rgba(230,170,30,1) 23%, rgba(255,232,173,1) 77%, rgba(255,232,173,1) 100%);
 }
 
-@media (max-width: 768px)
+@media screen and (max-width: 768px)
   {
     .containe{
       flex-direction: column
@@ -361,7 +361,7 @@ table{
 }
 
 tr:hover{
-  color: #007bff;
+  color: black;
   background: linear-gradient(to bottom, rgba(230,170,30,1) 0%, rgba(230,170,30,1) 23%, rgba(255,232,173,1) 77%, rgba(255,232,173,1) 100%);
 }
 
@@ -376,4 +376,278 @@ hr{
   width: 100%;
   position: absolute;
   background-color: #e9ecef21;
+}
+
+/*widok gry*/
+
+.int{
+  margin-bottom: 0rem;
+  min-height: 100%;
+  border-radius: 0rem;
+  width: 100%;
+  background-color: #3e3e3e96;
+}
+
+.h2int{
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.viewgame .row{
+  margin-left: 0px;
+  margin-right: 0px
+}
+
+.viewgame .row .col-md-3{
+  padding: 0rem 0rem;
+}
+.tablegame{
+  border:3px solid goldenrod;
+  margin-top: 80px;
+  height: 150px;
+  width: 100%;
+  background-image: url('https://www.goldenfate.net/template/default/gfx/bg-pattern-big.jpg')
+}
+.main{
+  height: 100%;
+  width: 100%;
+  padding: 0rem 0rem;
+}
+
+.report{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.brand{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 25vh;
+}
+
+.brand h1{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(253, 211, 101);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: url('http://i.giphy.com/VQ2XbYu2ITUbK.gif');
+  background-size: cover;
+  background-repeat: norepeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.infogame{
+  text-align: center;
+}
+
+.gamemid{
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.place{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 345px;
+  height: 150px;
+  background-color: white;
+  margin: 50px 50px;
+  border: solid 5px transparent;
+  border-image: linear-gradient(to left, yellow, red, yellow);
+  border-image-slice: 1;
+}
+
+.place:hover{
+  background-color: black;
+}
+
+.gameleave{
+  display: contents;
+}
+
+.gamejoin{
+  display: contents;
+}
+
+/*support*/
+
+.uu{
+  background-color: #80808080;
+  margin: 10px 10px;
+  display: flow-root;
+  border-radius: 5px;
+  
+}
+.oo{
+  float: left;
+  width: 50%;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 600px)
+{
+.uu .oo {
+    float: none;
+    width: 100%;
+  }
+}
+
+.h3faq {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.wrap {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+.panel {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #fff;
+  background: none;
+  box-shadow: none;
+}
+
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-heading {
+  background-color: #009688;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+
+.panel-title a {
+  display: block;
+  color: #fff;
+  padding: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.panel-body {
+  color: transparent;
+	background: -webkit-linear-gradient(left, rgba(255,232,173,1) 0%, rgba(255,232,173,1) 0%, rgba(230,170,30,1) 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+}
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  transition: border-radius linear 0s;
+}
+/* #bs-collapse icon scale option */
+
+.panel-heading a:before {
+  content: '\e146';
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 10px;
+  font-size: 24px;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.panel-heading.active a:before {
+  content: ' ';
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+#bs-collapse .panel-heading a:after {
+  content: ' ';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 10px;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+  content: '\e909';
+  transform: scale(1);
+  transition: all 0.5s;
+}
+/* #accordion rotate icon option */
+
+#accordion .panel-heading.active a:before {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+#accordion .panel-heading a:before {
+    content: '\e316';
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 16px;
+    top: 10px;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+#accordion .panel-heading .active a:before {
+  transition: all 0.5s;
+}
+    
+
+#accordion .panel-heading .collapsed:before {
+    content: '\e316';
+    position: absolute;
+    font-family: 'Material Icons';
+    transform: rotate(180deg);
+    transition: all 0.5s;
 }
