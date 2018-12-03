@@ -4,8 +4,8 @@ var express         = require("express"),
     methodOverride  = require("method-override"),
     mongoose        = require("mongoose");
 
-mongoose.connect("mongodb://localhost/golden", { useNewUrlParser: true });
-/*mongoose.connect("mongodb://gustav:gustav1@ds123584.mlab.com:23584/golden", { useNewUrlParser: true });*/
+/*mongoose.connect("mongodb://localhost/golden", { useNewUrlParser: true });*/
+mongoose.connect("mongodb://gustav:gustav1@ds123584.mlab.com:23584/golden", { useNewUrlParser: true });
 app.use(bodyparser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
