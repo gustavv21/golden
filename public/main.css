@@ -112,6 +112,7 @@ body{
   width: 100%;
   height: 100%;
   display: flex;
+  padding: 5rem;
 }
 
 .content{
@@ -127,6 +128,7 @@ body{
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .containe .left{
@@ -193,19 +195,16 @@ body{
 }
 
 @media screen and (max-width: 768px)
-  {
-    .containe{
-      flex-direction: column
-    }
-    .Rtable{
-      flex-direction: column
-    }
+{
+  .containe{
+    flex-direction: column
   }
+}
 
 .containe .right h1{
   padding-bottom: 1rem;
   padding-top: 1rem;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   color: rgb(253, 211, 101);
   letter-spacing: 5px;
@@ -222,7 +221,7 @@ body{
 	border-width: 4px 0;*/
   padding-bottom: 1rem;
   padding-top: 1rem;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   color: rgb(253, 211, 101);
   letter-spacing: 5px;
@@ -236,7 +235,7 @@ body{
 
 .containe .left h4, .right h4{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .containe .h4top{
@@ -486,8 +485,9 @@ hr{
   background-color: #80808080;
   margin: 10px 10px;
   display: flow-root;
-  border-radius: 5px;
-  
+  border-radius: 3rem;
+  margin: 50px;
+  padding: 2rem;
 }
 .oo{
   float: left;
